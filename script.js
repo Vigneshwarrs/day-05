@@ -11,7 +11,7 @@ var resume = {
 console.log(resume);
 
 // Question 2 iterate the json for , for in
-var resumes = [
+var resume1 = 
   {
     name: "Vignesh",
     age: 22,
@@ -19,21 +19,18 @@ var resumes = [
     email: "vigneshwarr@outlook.com",
     degree: "B.Tech",
     skills: ["C", "Java", "Javascript", "Html", "Css", "MySQL"],
-  },
-  {
-    name: "Kumar",
-    age: 23,
-    "professional summary": "Looking for STE",
-    email: "kumarrr@outlook.com",
-    degree: "B.E",
-    skills: ["C", "Java", "Junit", "TestNG", "Selenium"],
-  },
-];
-
-for (var i = 0; i < resumes.length; i++) {
-  console.log(resumes[i]);
+  };
+var obj = Object.keys(resume1);
+for (var i = 0; i < obj.length; i++) {
+  console.log(resume1[obj[i]]);
 }
 
-for (var i in resume) {
-  console.log(`${i}: ${resume[i]}`);
+for (var i in resume1) {
+  console.log(`${i}: ${resume1[i]}`);
 }
+
+for (var i of resume1) {
+  console.log(resume1[i]);
+}
+
+obj.forEach((i)=>console.log(resume1[ele]));
